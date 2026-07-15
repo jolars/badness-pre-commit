@@ -44,6 +44,10 @@ To check formatting without rewriting files:
   args: [--check]
 ```
 
+Both hooks pass `--force-exclude`, so files matched by `exclude` or
+`extend-exclude` in your `badness.toml` are skipped even though pre-commit
+names staged files explicitly.
+
 ## Versioning
 
 Tags mirror badness releases: `rev: v0.9.0` installs badness 0.9.0. New tags

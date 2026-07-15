@@ -1,7 +1,7 @@
 - id: badness-format
   name: badness format
   description: "Format LaTeX and BibTeX files with `badness format`."
-  entry: badness format
+  entry: badness format --force-exclude
   language: python
   files: '\.(tex|sty|cls|dtx|ins|bib)$'
   require_serial: true
@@ -9,7 +9,7 @@
 - id: badness-lint
   name: badness lint
   description: "Lint LaTeX and BibTeX files with `badness lint` (add `args: [--fix]` to apply safe autofixes)."
-  entry: badness lint
+  entry: badness lint --force-exclude
   language: python
   files: '\.(tex|sty|cls|dtx|ins|bib)$'
   require_serial: true
