@@ -4,6 +4,7 @@
   entry: badness format
   language: python
   files: '\.(tex|sty|cls|dtx|ins|bib)$'
+  require_serial: true
 
 - id: badness-lint
   name: badness lint
@@ -11,3 +12,4 @@
   entry: badness lint
   language: python
   files: '\.(tex|sty|cls|dtx|ins|bib)$'
+  require_serial: true
