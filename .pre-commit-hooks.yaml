@@ -1,0 +1,13 @@
+- id: badness-format
+  name: badness format
+  description: "Format LaTeX and BibTeX files with `badness format`."
+  entry: badness format
+  language: python
+  files: '\.(tex|sty|cls|dtx|ins|bib)$'
+
+- id: badness-lint
+  name: badness lint
+  description: "Lint LaTeX and BibTeX files with `badness lint` (add `args: [--fix]` to apply safe autofixes)."
+  entry: badness lint
+  language: python
+  files: '\.(tex|sty|cls|dtx|ins|bib)$'
