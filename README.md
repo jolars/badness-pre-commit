@@ -20,7 +20,7 @@ Add this to your `.pre-commit-config.yaml`:
 repos:
   - repo: https://github.com/jolars/badness-pre-commit
     # badness version
-    rev: v0.9.0
+    rev: v0.10.0
     hooks:
       # Lint .tex, .sty, .cls, .dtx, .ins, and .bib files
       - id: badness-lint
@@ -50,7 +50,7 @@ names staged files explicitly.
 
 ## Versioning
 
-Tags mirror badness releases: `rev: v0.9.0` installs badness 0.9.0. New tags
+Tags mirror badness releases: `rev: v0.10.0 installs badness 0.9.0. New tags
 are created automatically when a new badness version is published to PyPI.
 
 ## License
