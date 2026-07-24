@@ -3,14 +3,13 @@
 [![CI](https://github.com/jolars/badness-pre-commit/actions/workflows/ci.yml/badge.svg)](https://github.com/jolars/badness-pre-commit/actions/workflows/ci.yml)
 
 A [pre-commit](https://pre-commit.com) hook for
-[badness](https://github.com/jolars/badness), a formatter, linter, and
-language server for LaTeX.
+[badness](https://github.com/jolars/badness), a formatter, linter, and language
+server for LaTeX.
 
-Distributed as a thin Python package that depends on the
-[`badness` PyPI package](https://pypi.org/project/badness/), so pre-commit
-installs a prebuilt binary wheel—no Rust toolchain or LaTeX distribution
-required. Wheels are available for Linux, macOS, and Windows on both x64 and
-ARM64.
+Distributed as a thin Python package that depends on the [`badness` PyPI
+package](https://pypi.org/project/badness/), so pre-commit installs a prebuilt
+binary wheel—no Rust toolchain or LaTeX distribution required. Wheels are
+available for Linux, macOS, and Windows on both x64 and ARM64.
 
 ## Usage
 
@@ -45,12 +44,12 @@ To check formatting without rewriting files:
 ```
 
 Both hooks pass `--force-exclude`, so files matched by `exclude` or
-`extend-exclude` in your `badness.toml` are skipped even though pre-commit
-names staged files explicitly.
+`extend-exclude` in your `badness.toml` are skipped even though pre-commit names
+staged files explicitly.
 
 ## Versioning
 
-Tags mirror badness releases: `rev: v0.11.0 installs badness 0.9.0. New tags
+Tags mirror badness releases: \`rev: v0.11.0 installs badness 0.9.0. New tags
 are created automatically when a new badness version is published to PyPI.
 
 ## License
