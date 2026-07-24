@@ -27,7 +27,11 @@ jobs:
         shell: bash
         run: |
           hook_repo="$PWD"
-          sandbox="$(mktemp -d)"
+          # Keep the sandbox on the same drive as the workspace: on Windows
+          # runners the workspace is on D: while the default temp dir is on
+          # C:, and pre-commit's relative-path computation cannot cross
+          # drives.
+          sandbox="$(mktemp -d -p "$RUNNER_TEMP")"
           cd "$sandbox"
           git init -q
           git config user.email ci@example.com
