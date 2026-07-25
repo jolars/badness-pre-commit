@@ -46,7 +46,9 @@ def set_version(version: str) -> None:
     pyproject = re.sub(r'version = "[^"]+"', f'version = "{version}"', pyproject, count=1)
     pyproject = re.sub(r'"badness==[^"]+"', f'"badness=={version}"', pyproject)
     PYPROJECT.write_text(pyproject)
-    README.write_text(re.sub(r"rev: v\S+", f"rev: v{version}", README.read_text()))
+    README.write_text(
+        re.sub(r"rev: v\d+\.\d+\.\d+", f"rev: v{version}", README.read_text())
+    )
 
 
 def main() -> None:

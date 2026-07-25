@@ -49,8 +49,9 @@ staged files explicitly.
 
 ## Versioning
 
-Tags mirror badness releases: \`rev: v0.11.0 installs badness 0.9.0. New tags
-are created automatically when a new badness version is published to PyPI.
+Tags mirror badness releases: installing at tag `vX.Y.Z` gives you badness
+X.Y.Z. New tags are created automatically when a new badness version is
+published to PyPI.
 
 ## License
 
