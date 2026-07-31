@@ -19,7 +19,7 @@ Add this to your `.pre-commit-config.yaml`:
 repos:
   - repo: https://github.com/jolars/badness-pre-commit
     # badness version
-    rev: v0.11.0
+    rev: v0.12.0
     hooks:
       # Lint .tex, .sty, .cls, .dtx, .ins, and .bib files
       - id: badness-lint
