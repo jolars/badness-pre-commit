@@ -4,11 +4,11 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "badness-pre-commit"
-version = "0.22.1"
+version = "0.23.0"
 description = "pre-commit hook wrapper for badness"
 license = { text = "MIT" }
 requires-python = ">=3.10"
-dependencies = ["badness==0.22.1"]
+dependencies = ["badness==0.23.0"]
 
 [tool.setuptools]
 py-modules = []
